@@ -1,0 +1,47 @@
+@prefix ex:   <http://example.org/resource/> .
+@prefix dbo:  <http://dbpedia.org/ontology/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+
+# Countries
+ex:France    a dbo:Country ;
+    rdfs:label "France"@en ;
+    dbo:capital ex:Paris ;
+    dbo:thumbnail <https://upload.wikimedia.org/wikipedia/en/c/c3/Flag_of_France.svg> .
+
+ex:Germany   a dbo:Country ;
+    rdfs:label "Germany"@en ;
+    dbo:capital ex:Berlin ;
+    dbo:thumbnail <https://upload.wikimedia.org/wikipedia/en/b/ba/Flag_of_Germany.svg> .
+
+ex:Italy     a dbo:Country ;
+    rdfs:label "Italy"@en ;
+    dbo:capital ex:Rome ;
+    dbo:thumbnail <https://upload.wikimedia.org/wikipedia/en/0/03/Flag_of_Italy.svg> .
+
+ex:Spain     a dbo:Country ;
+    rdfs:label "Spain"@en ;
+    dbo:capital ex:Madrid ;
+    dbo:thumbnail <https://upload.wikimedia.org/wikipedia/en/9/9a/Flag_of_Spain.svg> .
+
+ex:Japan     a dbo:Country ;
+    rdfs:label "Japan"@en ;
+    dbo:capital ex:Tokyo ;
+    dbo:thumbnail <https://upload.wikimedia.org/wikipedia/en/9/9e/Flag_of_Japan.svg> .
+
+# Capitals (as resources with labels)
+ex:Paris  a dbo:Place ;
+    rdfs:label "Paris"@en .
+
+ex:Berlin a dbo:Place ;
+    rdfs:label "Berlin"@en .
+
+ex:Rome   a dbo:Place ;
+    rdfs:label "Rome"@en .
+
+ex:Madrid a dbo:Place ;
+    rdfs:label "Madrid"@en .
+
+ex:Tokyo  a dbo:Place ;
+    rdfs:label "Tokyo"@en .
